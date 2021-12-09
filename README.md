@@ -17,11 +17,11 @@ All packages installed and descriptors' contents have been taking from this [gui
 1. Clone the project:
 
 ```sh
-git clone https://github.com/SAP-samples/ui5-typescript-helloworld.git
-cd ui5-typescript-helloworld
+git clone https://github.com/Izio91/Walkthrough-TypeScript.git
+cd walkthrough-typescript
 ```
     
-(or download from https://github.com/SAP-samples/ui5-typescript-helloworld/archive/main.zip)
+(or download from https://github.com/Izio91/Walkthrough-TypeScript/archive/main.zip)
 
 2. Use npm to install the dependencies:
 
