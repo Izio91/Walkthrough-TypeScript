@@ -1,0 +1,34 @@
+{
+  "name": "walkthrough-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:ts start:ui5",
+    "watch:ts": "babel src --out-dir webapp --extensions \".ts,.js\" --watch",
+    "start:ui5": "ui5 serve --port 8080 -o index.html",
+    "build": "npm-run-all build:ts build:copyNoTsFiles build:ui5",
+    "build:ts": "babel src --out-dir webapp --extensions \".ts,.js\"",
+    "build:copyNoTsFiles": "cp -R src/view webapp && cp -R src/i18n webapp && cp -R src/css webapp && cp src/manifest.json webapp && cp src/index.html webapp",
+    "build:ui5": "ui5 build",
+    "start:dist": "ui5 serve  --port 8080 -o index.html --config ui5-dist.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jquery": "^3.5.10",
+    "@types/openui5": "^1.97.0",
+    "@types/qunit": "^2.11.2",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "babel-preset-transform-ui5": "^7.0.5",
+    "eslint": "^8.4.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.5.2"
+  }
+}
