@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run walkthrough-typescript",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"dist\"]",
+        "run.config": "{\"handlerId\":\"ui5_flat_run_config_handler_id\",\"runnableId\":\"/home/user/projects/walkthrough-typescript\"}"
+      },
+      "args": [
+        "--standalone",
+        "/ui5typescriptwalkthrough/index.html",
+        "--ui5",
+        "{\"version\":\".\"}"
+      ],
+      "envFile": "${workspaceFolder}/.env1",
+      "preLaunchTask": "Build walkthrough-typescript"
+    }
+  ]
+}

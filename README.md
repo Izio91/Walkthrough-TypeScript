@@ -4,7 +4,7 @@
 
 This app is basecally the translate of [Walkthrough sample](https://sapui5.hana.ondemand.com/#/topic/3da5f4be63264db99f2e5b04c5e853db) (Step 18 at moment) from SAPUI5 to TypeScript UI5. 
 
-This is done by [TypeScript package](https://www.npmjs.com/package/typescript) combined with `tsconfig.json` file, which are responsible of compile the `*.ts` files in `*.js`(ES2015/ES6), and by [Babel](https://babeljs.io/) transpiler which transform ES modules and classes in UI5 syntax. 
+This is done by [TypeScript package](https://www.npmjs.com/package/typescript) combined with `tsconfig.json` file, which are responsible of compile the `*.ts` files in `*.js`(ES2015/ES6), and with [Babel](https://babeljs.io/) transpiler which transform ES modules and classes in UI5 syntax. 
 
 All packages installed and descriptors' contents have been taking from this [guide](https://github.com/SAP-samples/ui5-typescript-helloworld/blob/main/step-by-step.md). It's suggested to take a look for more details.
 
@@ -38,6 +38,7 @@ npm run build
 ```
 
 The result is placed into the `dist` folder. To start the generated package, just run.
+The command also create the `webapp` folder.
 
 ```sh
 npm run start:dist
