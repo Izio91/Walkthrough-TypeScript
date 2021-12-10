@@ -40,12 +40,6 @@ npm run build
 The result is placed into the `dist` folder. To start the generated package, just run.
 The command also create the `webapp` folder.
 
-```sh
-npm run start:dist
-```
-
-Note that index.html still loads the UI5 framework from the relative URL `resources/...`, which does not physically exist, but is only provided dynamically by the UI5 tooling. So for an actual deployment you should change this URL to either [the CDN](https://openui5.hana.ondemand.com/#/topic/2d3eb2f322ea4a82983c1c62a33ec4ae) or your local deployment of UI5.
-
 ## Run the App
 
 Execute the following command to run the app locally for development in watch mode (the browser reloads the app automatically when there are changes in the source code):
