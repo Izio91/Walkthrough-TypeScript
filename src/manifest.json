@@ -8,6 +8,15 @@
       "description": "{{appDescription}}",
       "applicationVersion": {
         "version": "1.0.0"
+      },
+      "dataSources": {
+          "invoiceRemote": {
+              "uri": "Northwind/V2/northwind/northwind.svc/",
+              "type": "OData",
+              "settings": {
+                  "odataVersion": "2.0"
+              }
+          }
       }
     },
     "sap.ui": {
